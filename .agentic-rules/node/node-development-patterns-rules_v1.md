@@ -11,6 +11,15 @@ As a Node.js and TypeScript backend developer, you must strictly follow these co
 - **Always** adhere to SOLID, DRY, KISS, and YAGNI principles.
 - **Always** implement Domain-Driven Design (DDD) patterns for core business logic (Domain Layer), separating domain rules from infrastructure.
 
+## Clean Architecture Layering & Strict Directory Structure
+
+- **Always** strictly separate the Domain and Application layers.
+- **Never** place Use Cases inside the `src/domain/` folder.
+- **Always** place Use Cases (application logic that orchestrates domain entities and external ports) exclusively inside the `src/application/use-cases/` directory.
+- **Always** restrict the `src/domain/` directory to core business rules only: Entities, Value Objects, pure Domain Services, Domain Exceptions, and Interface definitions (Ports).
+- **Always** place all external integrations, database adapters, third-party API clients, and AWS-specific logic inside the `src/infrastructure/` directory.
+- **Always** place Lambda entry points in the `src/handlers/` directory (e.g., `src/handlers/api/`, `src/handlers/sqs/`). Handlers must only parse the incoming event, invoke the corresponding Application Use Case, and format the outgoing response.
+
 ## Object-Oriented & Structural Patterns
 
 - **Always** use the Dependency Injection (DI) pattern to decouple infrastructure services (e.g., Repositories, Use Cases, Controllers). Avoid hardcoded instantiations of external services.
