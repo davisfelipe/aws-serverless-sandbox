@@ -1,0 +1,14 @@
+.agentic-rules/node/node-development-patterns-rules_v1.md
+  h_2f7016600150cf 48-50,54-55,59-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "4f600eff84b70c84393e96b0c45183bf1e2b1f65",
+  "prompts": {},
+  "humans": {
+    "h_2f7016600150cf": {
+      "author": "David Felipe Pena Huertas <dfph1996@gmail.com>"
+    }
+  }
+}
