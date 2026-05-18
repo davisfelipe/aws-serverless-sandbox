@@ -179,3 +179,6 @@ dist
 # Ignore build folder
 .aws-sam/
 
+# AI Editors
+.cursor/
+.claude/
