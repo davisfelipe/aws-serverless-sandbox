@@ -1,0 +1,12 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "8635d8dffa668c5609181f7d1949bb92bb587421",
+  "prompts": {},
+  "humans": {
+    "h_2f7016600150cf": {
+      "author": "David Felipe Pena Huertas <dfph1996@gmail.com>"
+    }
+  }
+}
